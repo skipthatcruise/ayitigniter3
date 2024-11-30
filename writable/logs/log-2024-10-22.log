@@ -1,0 +1,233 @@
+CRITICAL - 2024-10-22 13:51:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 13:53:20 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 13:53:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product/bag]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 13:53:51 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product/bag]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 13:54:33 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:14:21 --> ArgumentCountError: Too few arguments to function App\Controllers\Shop::product(), 0 passed in /var/www/html/demo2/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:34:57 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:35:00 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:36:52 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product/pc/hp]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:36:52 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product/pc/hp/ws]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:37:15 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:37:16 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:37:21 --> TypeError: App\Controllers\Shop::product(): Return value must be of type string, none returned
+[Method: GET, Route: product]
+in APPPATH/Controllers/Shop.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->product()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:37:59 --> TypeError: App\Controllers\Shop::index(): Return value must be of type string, none returned
+[Method: GET, Route: shop]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:38:00 --> TypeError: App\Controllers\Shop::index(): Return value must be of type string, none returned
+[Method: GET, Route: shop]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:38:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:38:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop/ws]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:49 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop/ws]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop/ws]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:51 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "pc,laptop"
+[Method: GET, Route: shop/pc,laptop/ws]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:56 --> TypeError: App\Controllers\Shop::index(): Return value must be of type string, none returned
+[Method: GET, Route: shop]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-22 14:39:58 --> TypeError: App\Controllers\Shop::index(): Return value must be of type string, none returned
+[Method: GET, Route: shop]
+in APPPATH/Controllers/Shop.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Shop->index()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()

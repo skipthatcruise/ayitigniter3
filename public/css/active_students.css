@@ -1,0 +1,205 @@
+body {
+    background-color: #f7f9fc;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 30px;
+}
+
+.card {
+    background-color: rgb(241, 239, 239);
+    max-height: 380px;
+    border-radius: 20px;
+    border: none;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+}
+
+.sidebar {
+    background-color: rgba(132, 217, 239, 0.26);
+    margin-top: 25px;
+    width: 271px;
+    padding-top: 72px;
+    border-radius: 30px;
+    height: 92vh; /* Fixed height to extend sidebar without scrolling */
+    padding-bottom: 10px; /* Optional padding at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar a {
+    width: 100%;
+    display: block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    color: rgba(102, 102, 102, 1);
+    text-decoration: none;
+}
+
+.sidebar i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+.sidebar a.active {
+    background-color: rgba(33, 109, 136, 1);
+    color: rgba(245, 245, 245, 1);
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background-color: rgb(61, 147, 179);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.sidebar a.text-danger {
+    color: rgba(102, 102, 102, 1) !important;
+}
+
+.sidebar a.text-danger i {
+    color: red !important;
+}
+
+.sidebar a.text-danger:hover {
+    color: #fff !important;
+}
+
+.content {
+    padding: 20px;
+    margin-left: 15px; /* Space between sidebar and content */
+}
+
+.dashboard-header {
+    color: rgba(102, 102, 102, 1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px; /* Space above "Admin Dashboard" */
+}
+
+/* Dark blue layout for search and export CSV */
+.stat-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width */
+    background-color: rgba(33, 109, 136, 1); /* Dark Blue background */
+    padding: 10px 20px; /* Adjust padding for a nicer layout */
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+}
+
+.stat-box input {
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    width: 40%; /* Adjust width to fit layout */
+}
+
+.export-csv {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.export-csv a {
+    color: white;
+    text-decoration: none;
+}
+
+.export-csv a:hover {
+    color: red;
+    font-size: large;
+}
+
+.export-csv img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px; /* Adjust icon size */
+}
+
+.student-list-header {
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+    background-color: #216d881a;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.student-card {
+    
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+
+
+.student-card a{
+    text-decoration: none;
+    color: black;
+}
+
+.student-card a:hover{
+    text-decoration: none;
+    color: rgba(2, 2, 241, 0.801);
+}
+
+.student-card button {
+    
+    font-weight: bold;
+    background-color: rgba(33, 109, 136, 1);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.student-card button:hover {
+    background-color: rgb(85, 172, 204);
+    color: #fff;
+}
+
+.view-all-button {
+    width: 139px;
+    font-weight: bold;
+    background-color: rgba(33, 109, 136, 1); 
+    color: white;
+    border: none;
+    padding: 8px 20px; /* Adjusted padding */
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.view-all-button:hover {
+    background-color: rgb(85, 172, 204);
+    color: #fff;
+}
+
+.st-card{
+    color: black;
+    border-radius: 0;
+    padding-right: 30px;
+    
+}
+
+.st-header{
+    border-radius: 0;
+    padding-right: 30px; 
+}
+
+/* pagination */
+.pagin a{
+    text-decoration: none;
+}
+
+.pagin a:hover{
+    color: blue;
+}

@@ -1,0 +1,99 @@
+CRITICAL - 2024-10-12 14:27:06 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:27:37 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:27:40 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:27:42 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:27:44 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:28:08 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:28:10 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:30:34 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-12 14:30:41 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in /var/www/html/demo2/app/Config/Routes.php on line 19 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH/Router/RouteCollection.php on line 1051.
+ 1 APPPATH/Config/Routes.php(19): CodeIgniter\Router\RouteCollection->get()
+ 2 SYSTEMPATH/Router/RouteCollection.php(340): require('/var/www/html/demo2/app/Config/Routes.php')
+ 3 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()

@@ -1,0 +1,1 @@
+<h2>[home] Hi pal</h2>
