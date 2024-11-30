@@ -52,146 +52,54 @@
                         </div>
 
                         <!-- Student Card 1 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Favour Okoh</a></div>
-                            <div class="col-md-3">favour@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">01/01/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 2 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">John Doe</a></div>
-                            <div class="col-md-3">john@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">05/02/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 3 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 4 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
                         
-                          <!-- Student Card 5 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Favour Okoh</a></div>
-                            <div class="col-md-3">favour@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">01/01/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 6 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">John Doe</a></div>
-                            <div class="col-md-3">john@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">05/02/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 7 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 8 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
                         
-                        <!-- Student Card 9 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 10 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        
-
-                        
+    <div class="st-card">
+        <?php if (!empty($students) && is_array($students)): ?>
+            <?php foreach ($students as $student): ?>
+                <div class="row student-card mb-3 p-2 border rounded align-items-center">
+                    <div class="col-md-3">
+                        <a href="#" class="text-decoration-none">
+                            <?= esc($student['fullname']) ?>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <?= esc($student['email']) ?>
+                    </div>
+                    <div class="col-md-2">
+                        <span class="">Pending</span>
+                    </div>
+                    <div class="col-md-2">
+                        <?= esc($student['registered_date']) ?>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-danger btn-sm w-100">Approve</button>
                     </div>
                 </div>
-                <div class="pagin text-center mt-3">
-                    <span>1-10 of 120 &nbsp &nbsp</span>
-                    <a href="">Next Page ></a>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted">No pending students found.</p>
                 </div>
             </div>
+        <?php endif; ?>
+    </div>
+
+
+
+                          
+                        
+               
+            </div>
+            
+        </div>
+                </div>
+                <div class="pagin text-center mt-3">
+            <span>1-10 of 120 &nbsp &nbsp</span>
+            <a href="">Next Page ></a>
+                </div>
+        </div>
         </div>
     </div>
 
