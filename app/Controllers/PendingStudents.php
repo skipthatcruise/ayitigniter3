@@ -47,9 +47,17 @@ class PendingStudents extends BaseController
         }
 
         // Fetch data from `pending_students` to display
-        $data['students'] = $pendingModel->findAll();
+        // $data['students'] = $pendingModel->findAll();
 
-        
+        // $data['students'] = $pendingModel->paginate(10); 
+        // $data['pager'] = $pendingModel->pager;
+
+         // Pagination and view rendering
+        $data = [
+            'students' => $pendingModel->orderBy('id', 'ASC')->paginate(10),
+            'pager'    => $pendingModel->pager
+        ];
+
 
         // Pass data to the view
         return view('pending_students/pending_students', $data);
