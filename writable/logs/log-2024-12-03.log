@@ -1,0 +1,175 @@
+CRITICAL - 2024-12-03 12:35:32 --> Error: Class "App\Controllers\RegisteredStudentsModel" not found
+[Method: GET, Route: pending_students]
+in APPPATH/Controllers/PendingStudents.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:36:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pending_students.php"
+[Method: GET, Route: pending_students]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/PendingStudents.php(51): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:37:08 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(51): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:42:43 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:42:47 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:42:51 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:43:25 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:43:28 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:43:45 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 12:43:48 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 13:08:52 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 13:08:55 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 13:08:58 --> ErrorException: Undefined variable $status
+[Method: GET, Route: pending_students]
+in APPPATH/Views/pending_students/pending_students.php on line 83.
+ 1 APPPATH/Views/pending_students/pending_students.php(83): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/pending_students/pending_students.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PendingStudents.php(53): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
