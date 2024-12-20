@@ -13,3 +13,5 @@ class RegisteredStudentsModel extends Model
         'guardian_address', 'story', 'registered_date', 'status'
     ];
 }
+
+

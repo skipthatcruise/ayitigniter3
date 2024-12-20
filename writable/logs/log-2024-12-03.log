@@ -173,3 +173,73 @@ in APPPATH/Views/pending_students/pending_students.php on line 83.
  9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-12-03 15:51:09 --> mysqli_sql_exception: Table 'ayitiproject.pending_students' doesn't exist in /var/www/html/ayitigniter3/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /var/www/html/ayitigniter3/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /var/www/html/ayitigniter3/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ayitigniter3/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ayitigniter3/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ayitigniter3/system/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/ayitigniter3/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /var/www/html/ayitigniter3/app/Controllers/PendingStudents.php(28): CodeIgniter\BaseModel->first()
+#7 /var/www/html/ayitigniter3/system/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+#8 /var/www/html/ayitigniter3/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/ayitigniter3/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ayitigniter3/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/ayitigniter3/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/html/ayitigniter3/index.php(58): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-12-03 15:51:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ayitiproject.pending_students' doesn't exist
+[Method: GET, Route: pending_students]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/PendingStudents.php(28): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 15:51:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ayitiproject.pending_students' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/PendingStudents.php(28): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 15:51:10 --> [Caused by] mysqli_sql_exception: Table 'ayitiproject.pending_students' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/PendingStudents.php(28): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\PendingStudents->pending()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-03 16:30:38 --> ParseError: Unmatched '}'
+[Method: GET, Route: registration]
+in APPPATH/Controllers/Registration.php on line 70.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(887): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()

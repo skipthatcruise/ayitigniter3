@@ -16,15 +16,7 @@ class Registration extends BaseController
 
     public function save()
     {
-        // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        //     echo 'POST request received!';
-        // } else {
-        //     echo 'This is not a POST request.';
-        // }
-      
-      
-
-
+        
         $model = new RegisteredStudentsModel();
 
         //form validation
@@ -50,10 +42,16 @@ class Registration extends BaseController
        
         
     }
+
     public function success()
     {
         return view('success');
     }
+
+  
+    
+
+  
 
 }
 

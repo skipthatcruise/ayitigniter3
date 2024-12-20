@@ -46,14 +46,14 @@
                         <div class="st-header row student-list-header">
                             <div class="col-md-3"><strong>Name</strong></div>
                             <div class="col-md-3"><strong>Email</strong></div>
-                            <div class="col-md-2"><strong>Status</strong></div>
-                            <div class="col-md-2"><strong>Registered Date</strong></div>
-                            <div class="col-md-2 ">Action</div>
+                            <div class="col-md-3"><strong>Status</strong></div>
+                            <div class="col-md-3"><strong>Registered Date</strong></div>
+                          
                         </div>
 
                         <!-- Student Card 1 -->
                         <div class="st-card">
-                                    <?php if (!empty($students) && is_array($students)): ?>
+                                    <?php if (!empty($students) && is_array($students) && status['students'] == 'pending'): ?>
                     <?php foreach ($students as $student): ?>
                         <div class="row student-card mb-3 p-2 border rounded align-items-center">
                             <!-- Full Name -->
@@ -69,23 +69,16 @@
                             </div>
                             
                             <!-- Status -->
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <span class=""><?= $student['status'] ?? 'Pending' ?></span>
                             </div>
                             
                             <!-- Registered Date -->
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <?= esc(date('d/m/Y', strtotime($student['registered_date']))) ?>
                             </div>
                             
-                            <!-- Action Button -->
-                            <div class="col-md-2">
-                                <?php if ($student['status'] == 'Approved'): ?>
-                                    <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                                <?php else: ?>
-                                    <button class="btn btn-success btn-sm w-100">Approve</button>
-                                <?php endif; ?>
-                            </div>
+                        
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>
