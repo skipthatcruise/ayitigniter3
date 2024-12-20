@@ -10,6 +10,10 @@ body {
     border: none;
 }
 
+.container-fluid {
+    display: flex;
+}
+
 .sidebar {
     background-color: rgba(132, 217, 239, 0.26);
     margin-top: 25px;
@@ -64,6 +68,7 @@ body {
 .content {
     padding: 20px;
     margin-left: 15px; /* Space between sidebar and content */
+    width: 80%;
 }
 
 .dashboard-header {
@@ -140,4 +145,13 @@ body {
     font-weight: bold;
     color: rgba(102, 102, 102, 1);
     margin-top: -10px; /* Space above the "Name" title */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    }
 }

@@ -4,6 +4,10 @@ body {
     padding-left: 30px;
 }
 
+.container-fluid {
+    display: flex;
+}
+
 .card {
     background-color: rgb(241, 239, 239);
     max-height: 380px;
@@ -13,10 +17,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow-y: auto;
-}
-
-.container-fluid {
-    display: flex;
 }
 
 .sidebar {
@@ -56,6 +56,7 @@ body {
     background-color: rgb(61, 147, 179);
     color: #fff;
     border-radius: 8px;
+    
 }
 
 .sidebar a.text-danger {
@@ -73,7 +74,7 @@ body {
 .content {
     padding: 20px;
     margin-left: 15px; /* Space between sidebar and content */
-    width: 80%;
+    width: 80%; /*90%*/
 }
 
 .dashboard-header {
@@ -160,6 +161,7 @@ body {
     background-color: red;
     width: 120px;
     /* height: 30px; */
+    cursor: default;
     color: white;
     text-align: center;
     font-weight: 500;

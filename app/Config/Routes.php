@@ -15,7 +15,7 @@ $routes->post('registration/save', 'Registration::save');
 $routes->get('success', 'Registration::success');
 $routes->get('dashboard', 'Dashboard::dash');
 $routes->get('active_students', 'ActiveStudents::active');
-// $routes->get('pending_students', 'PendingStudents::pending');
+$routes->get('inactive_students', 'InactiveStudents::inactive');
 $routes->get('pending_students', 'PendingStudents::pending');
 $routes->get('login', 'Login::login');
 

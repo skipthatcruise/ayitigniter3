@@ -4,6 +4,10 @@ body {
     padding-left: 30px;
 }
 
+.container-fluid {
+    display: flex;
+}
+
 .card {
     background-color: rgb(241, 239, 239);
     max-height: 380px;
@@ -52,6 +56,7 @@ body {
     background-color: rgb(61, 147, 179);
     color: #fff;
     border-radius: 8px;
+    
 }
 
 .sidebar a.text-danger {
@@ -69,6 +74,7 @@ body {
 .content {
     padding: 20px;
     margin-left: 15px; /* Space between sidebar and content */
+    width: 80%; /*90%*/
 }
 
 .dashboard-header {
@@ -92,11 +98,28 @@ body {
     color: white;
 }
 
+.search-box {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.search-box i {
+    color:rgba(102, 102, 102, 1);
+    
+}
+
+
 .stat-box input {
     padding: 5px 15px;
     border-radius: 8px;
     border: none;
-    width: 40%; /* Adjust width to fit layout */
+    outline: none;
+    width: 100%; /* Adjust width to fit layout */
 }
 
 .export-csv {
@@ -111,7 +134,7 @@ body {
 }
 
 .export-csv a:hover {
-    color: red;
+    color: rgb(180, 180, 180);
     font-size: large;
 }
 
@@ -127,18 +150,61 @@ body {
     z-index: 1; */
     background-color: #216d881a;
     padding: 10px;
+    align-items: center;
     border-radius: 8px;
     font-weight: bold;
     margin-bottom: 10px;
+
 }
 
+.pending-badge {
+    background-color: green;
+    width: 120px;
+    /* height: 30px; */
+    cursor: default;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+padding: 5px 9px;
+border-radius: 5px;
+}
+
+/* NEXT PAGE FEATURE */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    /* transition: opacity 0.5s ease, visibility 0.5s ease;  */
+}
+
+.page-active {
+    opacity: 1;
+    visibility: visible;
+    /* transition: opacity 0.5s ease, visibility 0.5s ease; */
+
+}
+
+#nextPage, #prevPage {
+
+    border: none;
+    font-size: 14px;
+    background: none;
+
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .student-card {
-    
     background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
-    
 }
 
 
@@ -149,7 +215,7 @@ body {
 
 .student-card a:hover{
     text-decoration: none;
-    color: rgba(2, 2, 241, 0.801);
+    color: rgba(33, 109, 136, 1);
 }
 
 .student-card button {
@@ -166,6 +232,7 @@ body {
     background-color: rgb(85, 172, 204);
     color: #fff;
 }
+
 
 .view-all-button {
     width: 139px;
@@ -184,10 +251,8 @@ body {
 }
 
 .st-card{
-    color: black;
     border-radius: 0;
     padding-right: 30px;
-    
 }
 
 .st-header{

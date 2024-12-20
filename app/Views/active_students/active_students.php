@@ -21,181 +21,160 @@
                 </div>
                 <a href="<?= base_url('dashboard')?>"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                 <a href="<?= base_url('active_students')?>" class="active"><i class="fas fa-user-check"></i> Active Students</a>
+                <a href="<?= base_url('inactive_students')?>" class="inactive"><i class="fas fa-user-check"></i> Inactive Students</a>
                 <a href="<?= base_url('pending_students')?>"><i class="fas fa-user-clock"></i> Pending Students</a>
                 <a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
             </div>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 content">
+            <div class="dashboard-header mb-4">ACTIVE STUDENTS</div>
 
-            <!-- Main Content -->
-            <div class="col-md-9 content">
-                <div class="dashboard-header mb-4">ACTIVE STUDENTS</div>
-
-                <!-- Search and Export CSV Section -->
-                <div class="stat-box">
+            <!-- Search and Export CSV Section -->
+            <div class="stat-box">
+                <div class="search-box">
                     <input type="search" placeholder="Search Students by Name">
-                    <div class="export-csv">
-                        <a href="">Export CSV
-                        <img src="<?=base_url('public/images/search.png')?>" alt="Export Icon">
-                        </a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="export-csv">
+                    <a href="">Export CSV</a>
+                    <img src="<?=base_url('public/images/export.png')?>" alt="Export Icon">
+                </div>
+            </div>
+
+            <!-- Student List Section -->
+            <div class="card mt-4">
+                <div class="card-body">
+                    <!-- Column Titles -->
+                    <div class="st-header row student-list-header">
+                        <div class="col-md-3"><strong>Name</strong></div>
+                        <div class="col-md-3"><strong>Email</strong></div>
+                        <!-- <div class="col-md-2"><strong>Status</strong></div> -->
+                        <div class="col-md-2"><strong>Registered Date</strong></div>
+                        <div class="col-md-2 ">Status</div>
+                    </div>
+
+                    <!-- Student Card 1 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
+                        <div class="col-md-3">favour@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">01/01/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 2 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 3 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
+                        <div class="col-md-3">jane@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">15/03/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 4 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
+                        <div class="col-md-3">jane@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">15/03/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 5 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
+                        <div class="col-md-3">favour@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">01/01/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 6 -->
+                    <div class="st-card row page-2 hiddenH student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Student Card 6 -->
+                    <div class=" st-card row page-2 hidden student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Student Card 6 -->
+                    <div class="st-card row page-2 hidden student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Active
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-
-                <!-- Student List Section -->
-                <div class="card mt-4">
-                    <div class="card-body">
-                        <!-- Column Titles -->
-                        <div class="st-header row student-list-header">
-                            <div class="col-md-3"><strong>Name</strong></div>
-                            <div class="col-md-3"><strong>Email</strong></div>
-                            <div class="col-md-2"><strong>Status</strong></div>
-                            <div class="col-md-2"><strong>Registered Date</strong></div>
-                            <div class="col-md-2 ">Action</div>
-                        </div>
-
-                        <!-- Student Card 1 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Favour Okoh</a></div>
-                            <div class="col-md-3">favour@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">01/01/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 2 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">John Doe</a></div>
-                            <div class="col-md-3">john@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">05/02/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 3 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 4 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-                        
-                          <!-- Student Card 5 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Favour Okoh</a></div>
-                            <div class="col-md-3">favour@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">01/01/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 6 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">John Doe</a></div>
-                            <div class="col-md-3">john@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">05/02/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                        <!-- Student Card 7 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 8 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        
-                        <!-- Student Card 9 -->
-                        <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Unapproved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-success btn-sm w-100">Approve</button>
-                            </div>
-                        </div>
-
-                         <!-- Student Card 10 -->
-                         <div class="st-card row student-card">
-                            <div class="col-md-3"><a href="">Jane Smith</a></div>
-                            <div class="col-md-3">jane@gmail.com</div>
-                            <div class="col-md-2">
-                                <span class="">Approved</span>
-                            </div>
-                            <div class="col-md-2">15/03/2023</div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger btn-sm w-100">Unapprove</button>
-                            </div>
-                        </div>
-
-                        
-
-                        
-                    </div>
-                </div>
-                <div class="pagin text-center mt-3">
-                    <span>1-10 of 120 &nbsp &nbsp</span>
-                    <a href="">Next Page ></a>
-                </div>
+            </div>
+            <div class="pagin text-center mt-3">
+                <button id="prevPage" disabled>Prev Page ></button>
+                <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
+                <button id="nextPage">Next Page ></button>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

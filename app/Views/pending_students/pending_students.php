@@ -20,92 +20,163 @@
                     <img src="<?= base_url('public/images/ayitilogo2.png'); ?>" alt="Logo" class="img-fluid" style="max-width: 100px;">
                 </div>
                 <a href="<?= base_url('dashboard')?>"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-                <a href="<?= base_url('active_students')?>" ><i class="fas fa-user-check"></i> Active Students</a>
+                <a href="<?= base_url('active_students')?>"><i class="fas fa-user-check"></i> Active Students</a>
+                <a href="<?= base_url('inactive_students')?>" class="inactive"><i class="fas fa-user-check"></i> Inactive Students</a>
                 <a href="<?= base_url('pending_students')?>" class="active"><i class="fas fa-user-clock"></i> Pending Students</a>
                 <a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
             </div>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 content">
+            <div class="dashboard-header mb-4">PENDING STUDENTS</div>
 
-            <!-- Main Content -->
-            <div class="col-md-9 content">
-                <div class="dashboard-header mb-4">PENDING STUDENTS</div>
-
-                <!-- Search and Export CSV Section -->
-                <div class="stat-box">
+            <!-- Search and Export CSV Section -->
+            <div class="stat-box">
+                <div class="search-box">
                     <input type="search" placeholder="Search Students by Name">
-                    <div class="export-csv">
-                        <a href="">Export CSV
-                            <img src="<?=base_url('public/images/search.png')?>" alt="Export Icon">
-                        </a>
-                    </div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-
-                <!-- Student List Section -->
-                <div class="card mt-4">
-                    <div class="card-body">
-                        <!-- Column Titles -->
-                        <div class="st-header row student-list-header">
-                            <div class="col-md-3"><strong>Name</strong></div>
-                            <div class="col-md-3"><strong>Email</strong></div>
-                            <div class="col-md-3"><strong>Status</strong></div>
-                            <div class="col-md-3"><strong>Registered Date</strong></div>
-                          
-                        </div>
-
-                        <!-- Student Card 1 -->
-                        <div class="st-card">
-                                    <?php if (!empty($students) && is_array($students) && status['students'] == 'pending'): ?>
-                    <?php foreach ($students as $student): ?>
-                        <div class="row student-card mb-3 p-2 border rounded align-items-center">
-                            <!-- Full Name -->
-                            <div class="col-md-3">
-                                <a href="#" class="text-decoration-none">
-                                    <?= esc($student['fullname']) ?>
-                                </a>
-                            </div>
-                            
-                            <!-- Email -->
-                            <div class="col-md-3">
-                                <?= esc($student['email']) ?>
-                            </div>
-                            
-                            <!-- Status -->
-                            <div class="col-md-3">
-                                <span class=""><?= $student['status'] ?? 'Pending' ?></span>
-                            </div>
-                            
-                            <!-- Registered Date -->
-                            <div class="col-md-3">
-                                <?= esc(date('d/m/Y', strtotime($student['registered_date']))) ?>
-                            </div>
-                            
-                        
-                        </div>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <p class="text-muted">No pending students found.</p>
-                        </div>
-                    </div>
-                <?php endif; ?>
-                                    </div>
-
-                        
-
-                        
-
-                        
-                    </div>
-                </div>
-                <div class="pagin text-center mt-3">
-                    <span>1-10 of 120 &nbsp &nbsp</span>
-                    <a href="">Next Page ></a>
+                <div class="export-csv">
+                    <a href="">Export CSV</a>
+                    <img src="<?=base_url('public/images/export.png')?>" alt="Export Icon">
                 </div>
             </div>
+
+           <!-- Student List Section -->
+           <div class="card mt-4">
+                <div class="card-body">
+                    <!-- Column Titles -->
+                    <div class="st-header row page-1 student-list-header">
+                        <div class="col-md-3"><strong>Name</strong></div>
+                        <div class="col-md-3"><strong>Email</strong></div>
+                        <!-- <div class="col-md-2"><strong>Status</strong></div> -->
+                        <div class="col-md-2"><strong>Registered Date</strong></div>
+                        <div class="col-md-2 ">Action</div>
+                    </div>
+
+                    <!-- Student Card 1 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
+                        <div class="col-md-3">favour@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">01/01/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 2 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 3 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
+                        <div class="col-md-3">jane@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">15/03/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 4 -->
+                    <div class="st-card row page-1 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
+                        <div class="col-md-3">jane@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">15/03/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 5 -->
+                    <div class="st-card row page-1  student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
+                        <div class="col-md-3">favour@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Approved</span>
+                        </div> -->
+                        <div class="col-md-2">01/01/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</div>
+                        </div>
+                    </div>
+
+                    <!-- Student Card 6 -->
+                    <div class="st-card row page-2 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Student Card 6 -->
+                    <div class="st-card row page-2 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+                        <!-- <div class="col-md-2">
+                            <span class="">Unapproved</span>
+                        </div> -->
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Student Card 6 -->
+                    <div class="st-card row page-2 student-card">
+                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
+                        <div class="col-md-3">john@gmail.com</div>
+
+                        <div class="col-md-2">05/02/2023</div>
+                        <div class="col-md-2">
+                            <div class="pending-badge">Unapproved</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="pagin text-center mt-3">
+                <button id="prevPage" disabled>Prev Page ></button>
+                <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
+                <button id="nextPage">Next Page ></button>
+            </div>
+
+
         </div>
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
