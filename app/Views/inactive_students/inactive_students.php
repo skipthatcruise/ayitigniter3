@@ -54,122 +54,36 @@
                         <div class="col-md-2 ">Status</div>
                     </div>
 
-                    <!-- Student Card 1 -->
-                    <div class="st-card row page-1 student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
-                        <div class="col-md-3">favour@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Approved</span>
-                        </div> -->
-                        <div class="col-md-2">01/01/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Inactive</div>
-                        </div>
-                    </div>
-
-                    <!-- Student Card 2 -->
-                    <div class="st-card row page-1 student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
-                        <div class="col-md-3">john@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Unapproved</span>
-                        </div> -->
-                        <div class="col-md-2">05/02/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Inactive</div>
-                        </div>
-                    </div>
-
-                    <!-- Student Card 3 -->
-                    <div class="st-card row page-1 student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
-                        <div class="col-md-3">jane@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Unapproved</span>
-                        </div> -->
-                        <div class="col-md-2">15/03/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Inactive</div>
-                        </div>
-                    </div>
-
-                    <!-- Student Card 4 -->
-                    <div class="st-card row page-1 student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">Jane Smith</a></div>
-                        <div class="col-md-3">jane@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Approved</span>
-                        </div> -->
-                        <div class="col-md-2">15/03/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Inactive</div>
-                        </div>
-                    </div>
-
-                    <!-- Student Card 5 -->
-                    <div class="st-card row page-1 student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">Favour Okoh</a></div>
-                        <div class="col-md-3">favour@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Approved</span>
-                        </div> -->
-                        <div class="col-md-2">01/01/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Inactive</div>
-                        </div>
-                    </div>
-
-                    <!-- Student Card 6 -->
-                    <div class="st-card row page-2 hiddenH student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
-                        <div class="col-md-3">john@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Unapproved</span>
-                        </div> -->
-                        <div class="col-md-2">05/02/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Active
+                   
+                    <!-- Dynamic Student List -->
+                    <?php if (!empty($students)): ?>
+                        <?php foreach ($students as $student): ?>
+                            <div class="st-card row student-card">
+                                <div class="col-md-3">
+                                    <a href="<?= base_url('student_profile/' . $student['id']) ?>"><?= $student['fullname'] ?></a>
+                                </div>
+                                <div class="col-md-3"><?= $student['email'] ?></div>
+                                <div class="col-md-2"><?= date('d/m/Y', strtotime($student['registered_date'])) ?></div>
+                                <div class="col-md-2">
+                                    <div class="pending-badge"><?= $student['status'] ?></div>
+                                </div>
                             </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Student Card 6 -->
-                    <div class=" st-card row page-2 hidden student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
-                        <div class="col-md-3">john@gmail.com</div>
-                        <!-- <div class="col-md-2">
-                            <span class="">Unapproved</span>
-                        </div> -->
-                        <div class="col-md-2">05/02/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Active
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Student Card 6 -->
-                    <div class="st-card row page-2 hidden student-card">
-                        <div class="col-md-3"><a href="./pending-student-page.html">John Doe</a></div>
-                        <div class="col-md-3">john@gmail.com</div>
-
-                        <div class="col-md-2">05/02/2023</div>
-                        <div class="col-md-2">
-                            <div class="pending-badge">Active
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <div class="text-center mt-3">No inactive students found.</div>
+                    <?php endif; ?>
+                 
 
 
                     </div>
                 </div>
-            </div>
-            <div class="pagin text-center mt-3">
-                <button id="prevPage" disabled>Prev Page ></button>
-                <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
-                <button id="nextPage">Next Page ></button>
-            </div>
+                <div class="pagin text-center mt-3">
+                    <button id="prevPage" disabled>Prev Page ></button>
+                    <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
+                    <button id="nextPage">Next Page ></button>
+                </div>
+                </div>
+          
         </div>
     </div>
 

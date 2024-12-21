@@ -10,12 +10,6 @@ class PendingStudents extends BaseController
     public function pending()
     {
         
-        return view('pending_students/pending_students');
-
-    }
-
-    public function pending_dash()
-    {
         $studentModel = new StudentModel();
         
         // Fetch pending students (assuming status column tracks 'Pending')
@@ -23,7 +17,9 @@ class PendingStudents extends BaseController
         
         // Load the view and pass the student data
         return view('pending_students/pending_students', $data);
+
     }
+
 
   
 }

@@ -64,16 +64,19 @@
                                     <button>View</button>
                                 </a>
                             </div>
+
+                            
                         <?php endforeach; ?>
+                        <div class="text-left mt-3">
+                            <a href="<?= base_url('pending_students')?>"> <button class="view-all-button">View All</button></a>
+                        </div>
                     <?php else: ?>
                         <p>No pending students found.</p>
                     <?php endif; ?>
 
                     
 
-                    <div class="text-left mt-3">
-                       <a href="<?= base_url('pending_students')?>"> <button class="view-all-button">View All</button></a>
-                    </div>
+                   
                 </div>
             </div>
         </div>

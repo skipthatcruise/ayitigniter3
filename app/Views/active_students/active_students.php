@@ -73,15 +73,16 @@
                         <div class="text-center mt-3">No active students found.</div>
                     <?php endif; ?>
 
-
                     </div>
-                </div>
-            </div>
-            <div class="pagin text-center mt-3">
+                    </div>
+                    <div class="pagin text-center mt-3">
                 <button id="prevPage" disabled>Prev Page ></button>
                 <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
                 <button id="nextPage">Next Page ></button>
             </div>
+                </div>
+            </div>
+           
         </div>
     </div>
 

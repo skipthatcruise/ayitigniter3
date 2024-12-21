@@ -22,7 +22,7 @@
                 <div class="text-center mb-5">
                     <img src="<?= base_url('public/images/ayitilogo2.png'); ?>" alt="Logo" class="img-fluid" style="max-width: 100px;">
                 </div>
-                <a href="<?= base_url('dashboard')?>" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="<?= base_url('dashboard')?>" ><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                 <a href="<?= base_url('active_students')?>"><i class="fas fa-user-check"></i> Active Students</a>
                 <a href="<?= base_url('inactive_students')?>" class="inactive"><i class="fas fa-user-check"></i> Inactive Students</a>
                 <a href="<?= base_url('pending_students')?>"><i class="fas fa-user-clock"></i> Pending Students</a>
