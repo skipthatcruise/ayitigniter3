@@ -17,7 +17,9 @@ $routes->get('dashboard', 'Dashboard::dash');
 $routes->get('active_students', 'ActiveStudents::active');
 $routes->get('inactive_students', 'InactiveStudents::inactive');
 $routes->get('pending_students', 'PendingStudents::pending');
-$routes->get('student_profile', 'StudentProfile::profile');
+$routes->get('student_profile/(:num)', 'StudentProfile::profile/$1');
+$routes->get('approve/(:num)', 'StudentProfile::approve/$1');
+$routes->get('decline/(:num)', 'StudentProfile::decline/$1');
 $routes->get('login', 'Login::login');
 
 

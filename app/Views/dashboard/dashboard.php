@@ -56,20 +56,23 @@
                 <div class="card-body">
                     <!-- "Name" title below "Pending Students" -->
                     <div class="name-title">Name</div>
-                    <div class="student-card d-flex justify-content-between align-items-center">
-                        <span>Favour Okoh Blessing</span>
-                        <a href="<?= base_url('student_profile')?>"><button>View</button></a>
-                    </div>
-                    <div class="student-card d-flex justify-content-between align-items-center">
-                        <span>Favour Okoh Blessing</span>
-                        <a href="<?= base_url('student_profile')?>"><button>View</button></a>
-                    </div>
-                    <div class="student-card d-flex justify-content-between align-items-center">
-                        <span>Favour Okoh Blessing</span>
-                        <a href="<?= base_url('student_profile')?>"><button>View</button></a>
-                    </div>
+                    <?php if (!empty($students)): ?>
+                        <?php foreach ($students as $student): ?>
+                            <div class="student-card d-flex justify-content-between align-items-center">
+                                <span><?= esc($student['fullname']) ?></span>
+                                <a href="<?= base_url('student_profile/' . $student['id']) ?>">
+                                    <button>View</button>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>No pending students found.</p>
+                    <?php endif; ?>
+
+                    
+
                     <div class="text-left mt-3">
-                       <a href="<?= base_url('student_profile')?>"> <button class="view-all-button">View All</button></a>
+                       <a href="<?= base_url('pending_students')?>"> <button class="view-all-button">View All</button></a>
                     </div>
                 </div>
             </div>

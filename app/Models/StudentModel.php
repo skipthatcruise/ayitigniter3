@@ -10,18 +10,8 @@ class StudentModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = [
         'fullname', 'phonenumber','address','email', 'gender', 'literacy', 'guardian_phone', 
-        'guardian_address', 'story', 'registered_date'
+        'guardian_address', 'story', 'registered_date', 'status'
     ];
 
-    public function getAllStudents()
-    {
-        return $this->findAll();
-    }
 
-    public function getThreeStudentNames()
-    {
-        return $this->select('fullname')
-                ->limit(4)
-                ->findAll();
-    }
 }

@@ -1,0 +1,86 @@
+CRITICAL - 2024-12-20 21:46:52 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getThreeStudentNames
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Controllers/Dashboard.php(15): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 21:46:54 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getThreeStudentNames
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Controllers/Dashboard.php(15): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 21:47:33 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getThreeStudentNames
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Controllers/Dashboard.php(15): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 21:48:08 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getThreeStudentNames
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Controllers/Dashboard.php(15): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 22:00:18 --> BadMethodCallException: Call to undefined method App\Models\StudentModel::getThreeStudentNames
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Model.php on line 932.
+ 1 APPPATH/Controllers/Dashboard.php(15): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 22:03:34 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: dashboard]
+in APPPATH/Views/dashboard/dashboard.php on line 62.
+ 1 APPPATH/Views/dashboard/dashboard.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/var/www/html/ayitigniter3/app/Views/dashboard/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Dashboard.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->dash()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-12-20 23:30:47 --> Error: Class "App\Controllers\StudentModel" not found
+[Method: GET, Route: student_profile/11]
+in APPPATH/Controllers/StudentProfile.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\StudentProfile->profile()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(58): CodeIgniter\Boot::bootWeb()
+INFO - 2024-12-20 23:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-20 23:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

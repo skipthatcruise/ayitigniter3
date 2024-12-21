@@ -38,8 +38,8 @@
                     <img src="<?=base_url('public/images/student.jpg')?>" alt="Profile Picture" style="width: 100%; height: 100%;">
                 </div>
                 <div class="profile-info">
-                    <div class="student-name">Jame Brown David</div>
-                    <div class="status-badge">Inactive Student</div>
+                    <div class="student-name"><?= esc($student['fullname']) ?></div>
+                    <div class="status-badge"><?= esc($student['status']) . " Student" ?></div>
                 </div>
             </div>
             <div class="info">
@@ -47,13 +47,11 @@
                 <div class="info-1">
                     <div class="card profile">
                         <div class="card-header">Profile Details</div>
-                        <div class="detail-item">Phone Number: <span>08106612345</span></div>
-                        <div class="detail-item">Gender: <span>Male</span></div>
+                        <div class="detail-item">Phone Number: <span><?= esc($student['phonenumber']) ?></span></div>
+                        <div class="detail-item">Gender: <span><?= esc($student['gender']) ?></span></div>
                         <div class="detail-item">
                             <p>Address: </p><span class="address" id="profile-address">
-                                <p>123b Surulere Rd , Aguda Lagos
-                                    total junction lagos ibadan express
-                                    Road</p>
+                                <p><?= esc($student['address']) ?></p>
                             </span>
                         </div>
                     </div>
@@ -63,13 +61,11 @@
                         <div class="card-header">Guardian Details</div>
                         <div class="detail-item guard-line">
                             Phone Number:
-                            <span>08106612345</span>
+                            <span><?= esc($student['guardian_phone']) ?></span>
                         </div>
                         <div class="detail-item">
                             <p>Address: </p><span class="address" id="guardian-address">
-                                <p>123b Surulere Rd , Aguda Lagos
-                                    total junction lagos ibadan express
-                                    Road</p>
+                                <p><?= esc($student['guardian_address']) ?></p>
                             </span>
                         </div>
                     </div>
@@ -79,7 +75,7 @@
                     <div class="question-section">
                         <div class="question-answer">
                             <span id="question">Can you read or write?</span>
-                            <span id="answer">Yes</span>
+                            <span id="answer"><?= esc($student['literacy']) ?></span>
                         </div>
                     </div>
 
@@ -87,19 +83,15 @@
                     <div class="story-section">
                         <div class="story-header">Beneficiary Story</div>
                         <span id="story">
-                            <div>My family cant afford food and
-                                bottle water but we can afford origin
-                                Biiters and some suya. I need to learn how
-                                to code so i can make my family proud
-                                Thanks
+                            <div><?= esc($student['story']) ?>
                             </div>
                         </span>
                     </div>
 
                     <!-- Action Buttons -->
                     <div class="actions">
-                        <a href=""><button id="approve-btn">Approve</button></a>
-                        <a href=""><button id="decline-btn">Decline</button></a>
+                        <a href="<?= base_url('approve/' . $student['id']) ?>"><button id="approve-btn">Approve</button></a>
+                        <a href="<?= base_url('decline/' . $student['id']) ?>"><button id="decline-btn">Decline</button></a>
                     </div>
                 </div>
             </div>
