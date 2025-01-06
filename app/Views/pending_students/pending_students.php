@@ -23,7 +23,7 @@
                 <a href="<?= base_url('active_students')?>"><i class="fas fa-user-check"></i> Active Students</a>
                 <a href="<?= base_url('inactive_students')?>" class="inactive"><i class="fas fa-user-check"></i> Inactive Students</a>
                 <a href="<?= base_url('pending_students')?>" class="active"><i class="fas fa-user-clock"></i> Pending Students</a>
-                <a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                <a href="<?= base_url('admin/logout')?>" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
             </div>
         </div>
         <!-- Main Content -->

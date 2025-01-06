@@ -25,7 +25,7 @@
                 <a href="<?= base_url('active_students')?>" ><i class="fas fa-user-check"></i> Active Students</a>
                 <a href="<?= base_url('inactive_students')?>" class="inactive"><i class="fas fa-user-check"></i> Inactive Students</a>
                 <a href="<?= base_url('pending_students')?>"><i class="fas fa-user-clock"></i> Pending Students</a>
-                <a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                <a href="<?= base_url('admin/logout')?>" class="text-danger"><i class="fas fa-sign-out-alt"></i> Log out</a>
             </div>
         </div>
 
@@ -36,12 +36,12 @@
             <div class="d-flex justify-content-between row mb-4">
                 <div class="col-md-3">
                     <div class="stat-box">
-                        Total Active Students (120)
+                        Total Active Students (<?= esc($totalActiveStudents); ?>)
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="stat-box">
-                        Total Pending Students (120)
+                        Total Pending Students (<?= esc($totalPendingStudents); ?>)
                     </div>
                 </div>
             </div>

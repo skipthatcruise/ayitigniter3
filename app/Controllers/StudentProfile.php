@@ -9,6 +9,10 @@ class StudentProfile extends BaseController
 {
     public function profile($id)
     {
+        if (!session()->get('isAdminLoggedIn')) {
+            return redirect()->to('admin/login');
+        } //newlines
+
         $studentModel = new StudentModel();
 
 
@@ -26,6 +30,11 @@ class StudentProfile extends BaseController
 
 
     public function approve($id) {
+
+        if (!session()->get('isAdminLoggedIn')) {
+            return redirect()->to('admin/login');
+        } //newlines
+
         $studentModel = new StudentModel();
 
         // Update the student's status to 'Active'
@@ -36,6 +45,10 @@ class StudentProfile extends BaseController
     }
 
     public function decline($id) {
+        if (!session()->get('isAdminLoggedIn')) {
+            return redirect()->to('admin/login');
+        } //newlines
+        
         $studentModel = new StudentModel();
 
         // Update the student's status to 'Inactive'

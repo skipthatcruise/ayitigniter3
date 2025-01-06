@@ -9,6 +9,10 @@ class InactiveStudents extends BaseController
 {
     public function inactive()
     {
+        if (!session()->get('isAdminLoggedIn')) {
+            return redirect()->to('admin/login');
+        } //newlines
+
         $studentModel = new StudentModel();
 
         // Fetch active students

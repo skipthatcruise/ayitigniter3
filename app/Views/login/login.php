@@ -19,13 +19,21 @@
       </div>
       <div class="form-box">
         <h2>Welcome back!</h2>
-        <form action="#" method="post">
+
+        <?php if (session()->getFlashdata('loginError')): ?>
+            <div class="alert alert-danger" style="color: red;">
+                <?= session()->getFlashdata('loginError'); ?>
+            </div>
+        <?php endif; ?>
+
+
+        <form action="<?= site_url('admin/authenticate') ?>" method="post">
           <div class="input-box">
-            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Email" name="email"/>
             <i class="bx bxs-envelope"></i>
           </div>
           <div class="input-box">
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" name = "password"/>
             <i class="bx bxs-lock-alt"></i>
           </div>
           <div class="input-box">

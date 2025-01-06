@@ -9,7 +9,10 @@ class PendingStudents extends BaseController
 {
     public function pending()
     {
-        
+        if (!session()->get('isAdminLoggedIn')) {
+            return redirect()->to('admin/login');
+        } //newlines
+
         $studentModel = new StudentModel();
         
         // Fetch pending students (assuming status column tracks 'Pending')
