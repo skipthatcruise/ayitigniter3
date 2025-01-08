@@ -24,6 +24,10 @@ $routes->get('admin/login', 'Login::login');
 $routes->post('admin/authenticate', 'Login::authenticate');
 $routes->get('admin/logout', 'Login::logout');
 $routes->get('admin/dashboard', 'Login::dashboard');
+$routes->get('search_active', 'ActiveStudents::search');
+$routes->get('search_inactive', 'InactiveStudents::search');
+$routes->get('search_pending', 'PendingStudents::search');
+
 
 
 

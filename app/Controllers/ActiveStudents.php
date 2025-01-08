@@ -23,5 +23,24 @@ class ActiveStudents extends BaseController
 
     }
 
+    public function search()
+    {
+        // Get the search query from the URL
+        $query = $this->request->getGet('query');
+
+        // Initialize the student model
+        $studentModel = new StudentModel();
+
+        // Search for students by name (you can adjust this to match the actual column in your database)
+        $students = $studentModel->like('fullname', $query)->where('status', 'active')->findAll();
+
+        // Pass the results and query to the view
+        return view('active_students/active_students', [
+            'students' => $students,
+            'query' => $query,
+        ]);
+    }
+
+
   
 }

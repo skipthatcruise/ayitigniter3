@@ -32,14 +32,27 @@
 
             <!-- Search and Export CSV Section -->
             <div class="stat-box">
-                <div class="search-box">
-                    <input type="search" placeholder="Search Students by Name">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="export-csv">
+            <div class="search-box" style="display: flex; align-items: center; gap: 8px;">
+                    <form action="<?= site_url('search_pending') ?>" method="get" style="display: flex; align-items: center;">
+                        <input 
+                            type="search" 
+                            name="query" 
+                            placeholder="Search Students by Name" 
+                            style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex: 1;"
+                            required
+                        >
+                        <button type="submit" style="background: none; border: none; cursor: pointer;">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 1.2em; color: #333;"></i>
+                        </button>
+                    </form>
+                </div>    
+
+
+
+                <!-- <div class="export-csv">
                     <a href="">Export CSV</a>
-                    <img src="<?=base_url('public/images/export.png')?>" alt="Export Icon">
-                </div>
+                    <img src="" alt="Export Icon">
+                </div> -->
             </div>
 
            <!-- Student List Section -->
@@ -51,7 +64,7 @@
                         <div class="col-md-3"><strong>Email</strong></div>
                         <!-- <div class="col-md-2"><strong>Status</strong></div> -->
                         <div class="col-md-2"><strong>Registered Date</strong></div>
-                        <div class="col-md-2 ">Action</div>
+                        <div class="col-md-2 ">Status</div>
                     </div>
 
 

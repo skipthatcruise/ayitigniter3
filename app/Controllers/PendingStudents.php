@@ -23,6 +23,24 @@ class PendingStudents extends BaseController
 
     }
 
+    public function search()
+    {
+        // Get the search query from the URL
+        $query = $this->request->getGet('query');
+
+        // Initialize the student model
+        $studentModel = new StudentModel();
+
+        // Search for students by name (you can adjust this to match the actual column in your database)
+        $students = $studentModel->like('fullname', $query)->where('status', 'pending')->findAll();
+
+        // Pass the results and query to the view
+        return view('pending_students/pending_students', [
+            'students' => $students,
+            'query' => $query,
+        ]);
+    }
+
 
   
 }
