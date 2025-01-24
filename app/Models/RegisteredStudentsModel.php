@@ -10,7 +10,7 @@ class RegisteredStudentsModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = [
         'fullname', 'phonenumber','address','email', 'gender', 'literacy', 'guardian_phone', 
-        'guardian_address', 'story', 'registered_date', 'status'
+        'guardian_address', 'story', 'registered_date', 'status','image'
     ];
 }
 

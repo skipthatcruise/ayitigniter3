@@ -4,9 +4,12 @@
     <!-- Form Title Centered and Upload Image Aligned Left -->
     <div class="d-flex align-items-center justify-content-between mb-4">
         <!-- Image Upload Section Aligned Left -->
+         <!-- Form Section -->
+    <form action="<?= site_url('registration/save') ?>" method="post" enctype = "multipart/form-data">
         <div class="upload-image">
+
             <span>Upload image</span>
-            <input type="file" accept="image/*">
+            <input type="file" name = "image" accept="image/*" required>
         </div>
 
         <!-- Registration Form Title Centered with the new style -->
@@ -14,7 +17,7 @@
     </div>
 
     <!-- Form Section -->
-    <form action="<?= site_url('registration/save') ?>" method="post">
+    <!-- <form action="" method="post"> -->
  
         <div class="row mb-3">
             <div class="col-md-6">
@@ -94,8 +97,8 @@
     
     </form>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->elivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsd
 
 
     <?= view('templates/footer') ?>

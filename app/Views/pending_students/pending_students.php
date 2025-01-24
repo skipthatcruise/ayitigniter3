@@ -65,7 +65,7 @@
                         <!-- <div class="col-md-2"><strong>Status</strong></div> -->
                         <div class="col-md-2"><strong>Registered Date</strong></div>
                         <div class="col-md-2 ">Status</div>
-                    </div>
+v>
 
 
                       <!-- Dynamic Student List -->

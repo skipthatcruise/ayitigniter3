@@ -35,7 +35,7 @@
         <section class="display">
             <div class="header">
                 <div class="profile-picture">
-                    <img src="<?=base_url('public/images/student.jpg')?>" alt="Profile Picture" style="width: 100%; height: 100%;">
+                    <img src="<?= esc($student['image']) ?>" alt="Profile Picture" style="width: 100%; height: 100%;">
                 </div>
                 <div class="profile-info">
                     <div class="student-name"><?= esc($student['fullname']) ?></div>
