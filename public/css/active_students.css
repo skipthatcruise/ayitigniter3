@@ -19,10 +19,9 @@ body {
     background-color: rgba(132, 217, 239, 0.26);
     margin-top: 25px;
     width: 271px;
-    padding-top: 72px;
     border-radius: 30px;
     height: 92vh; /* Fixed height to extend sidebar without scrolling */
-    padding-bottom: 10px; /* Optional padding at the bottom */
+    padding-bottom: 60px; /* Optional padding at the bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
