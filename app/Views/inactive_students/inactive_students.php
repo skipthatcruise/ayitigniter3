@@ -90,11 +90,10 @@
 
                     </div>
                 </div>
-                <div class="pagin text-center mt-3">
-                    <button id="prevPage" disabled>Prev Page ></button>
-                    <span>&nbsp 1-2 of 2 &nbsp &nbsp</span>
-                    <button id="nextPage">Next Page ></button>
-                </div>
+                <!-- Pagination Links (Simple Previous/Next) -->
+                        <div class="d-flex justify-content-center mt-4">
+                            <?= $pager->links() ?>
+                        </div>
                 </div>
           
         </div>

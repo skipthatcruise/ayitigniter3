@@ -15,8 +15,11 @@ class PendingStudents extends BaseController
 
         $studentModel = new StudentModel();
         
-        // Fetch pending students (assuming status column tracks 'Pending')
-        $data['students'] = $studentModel->where('status', 'pending')->findAll();
+        // Fetch active students with pagination (6 entries per page)
+        $data = [
+            'students' => $studentModel->where('status', 'Pending')->paginate(6),
+            'pager' => $studentModel->pager // Pass pagination object to the view
+        ];
         
         // Load the view and pass the student data
         return view('pending_students/pending_students', $data);

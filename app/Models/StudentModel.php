@@ -13,5 +13,9 @@ class StudentModel extends Model
         'guardian_address', 'story', 'registered_date', 'status'
     ];
 
+    public function getUsers($perPage)
+    {
+        return $this->paginate($perPage);
+    }
 
 }

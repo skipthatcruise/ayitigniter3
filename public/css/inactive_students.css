@@ -9,14 +9,7 @@ body {
 }
 
 .card {
-    background-color: rgb(241, 239, 239);
-    max-height: 380px;
-    border-radius: 20px;
     border: none;
-    padding: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow-y: auto;
 }
 
 .sidebar {

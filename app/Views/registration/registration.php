@@ -5,20 +5,40 @@
     <div class="d-flex align-items-center justify-content-between mb-4">
         <!-- Image Upload Section Aligned Left -->
          <!-- Form Section -->
+    
     <form action="<?= site_url('registration/save') ?>" method="post" enctype = "multipart/form-data">
         <div class="upload-image">
 
-            <span>Upload image</span>
-            <input type="file" name = "image" accept="image/*" required>
+        <img id="imagePreview" src="" alt="Preview" style="width: 100%; height: 100%; border-radius: 50%; display: none; object-fit: cover;">
+
+            <span id="uploadText">Upload image</span>
+            <input type="file" name = "image" id = "imageInput" accept="image/*" required>
         </div>
+
+
+        <script>
+    document.getElementById("imageInput").addEventListener("change", function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById("imagePreview").src = e.target.result;
+                document.getElementById("imagePreview").style.display = "block";
+                document.getElementById("uploadText").style.display = "none"; // Hide the "Upload image" text
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+
 
         <!-- Registration Form Title Centered with the new style -->
         <h2 class="form-title flex-grow-1 text-center">Registration Form</h2>
     </div>
 
-    <!-- Form Section -->
-    <!-- <form action="" method="post"> -->
- 
+
+        
         <div class="row mb-3">
             <div class="col-md-6">
                 <label for="fullName" class="form-label">Full Name *</label>
@@ -26,7 +46,7 @@
             </div>
             <div class="col-md-6">
                 <label for="phoneNumber" class="form-label">Phone Number *</label>
-                <input name="phonenumber" type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                <input name="phonenumber" type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" maxlength = "11" required>
             </div>
         </div>
 
@@ -75,7 +95,7 @@
         <div class="row mb-3">
             <div class="col-md-6">
                 <label for="guardianPhone" class="form-label">Guardian Phone Number *</label>
-                <input type="tel" name="guardian_phone" class="form-control" id="guardianPhone" placeholder="Enter guardian's phone number" required>
+                <input type="tel" name="guardian_phone" class="form-control" id="guardianPhone" placeholder="Enter guardian's phone number" maxlength = "11" required>
             </div>
             <div class="col-md-6">
                 <label for="guardianAddress" class="form-label">Guardian Address</label>
@@ -97,8 +117,8 @@
     
     </form>
 
-    <!-- Bootstrap JS -->elivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsd
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <?= view('templates/footer') ?>

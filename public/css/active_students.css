@@ -9,14 +9,10 @@ body {
 }
 
 .card {
-    background-color: rgb(241, 239, 239);
-    max-height: 380px;
-    border-radius: 20px;
+    /* background-color: rgb(241, 239, 239); */
+    /* border-radius: 20px; */
     border: none;
-    padding: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto;  */
 }
 
 .sidebar {
@@ -201,10 +197,12 @@ border-radius: 5px;
 
 
 .student-card {
+   
     background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+    
 }
 
 
@@ -258,13 +256,4 @@ border-radius: 5px;
 .st-header{
     border-radius: 0;
     padding-right: 30px; 
-}
-
-/* pagination */
-.pagin a{
-    text-decoration: none;
-}
-
-.pagin a:hover{
-    color: blue;
 }

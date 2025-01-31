@@ -15,8 +15,11 @@ class InactiveStudents extends BaseController
 
         $studentModel = new StudentModel();
 
-        // Fetch active students
-        $data['students'] = $studentModel->where('status', 'Inactive')->findAll();
+        // Fetch active students with pagination (6 entries per page)
+        $data = [
+            'students' => $studentModel->where('status', 'inactive')->paginate(6),
+            'pager' => $studentModel->pager // Pass pagination object to the view
+        ];
 
         // Load the view and pass data
         return view('inactive_students/inactive_students', $data);
